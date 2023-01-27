@@ -94,7 +94,8 @@ a{
   .card__container{
     align-items: center;
     flex-direction: column;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
   }
