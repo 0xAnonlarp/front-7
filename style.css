@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: hsl(30, 38%, 92%);
+}
+
+.card__container{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+h3{
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 20px;
+}
+
+p{
+  color: hsl(228, 12%, 48%);
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+h1 , h2{
+font-family: 'Fraunces', serif;
+max-width: 230px;
+}
+
+h2{
+  color: hsl(158, 36%, 37%);
+  font-size: 32px;
+}
+
+.card__image{
+  border-radius: 10px 0px 0px 10px;
+  height: 480px ;
+}
+
+.product-info{
+  padding: 40px;
+  width: 310px;
+  background: white;
+  border-radius: 0px 10px 10px 0px;
+  height: 480px;
+}
+
+.prices{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+div.prices p{
+  text-decoration: line-through;
+}
+
+.button{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0px;
+  border-radius: 7px;
+  background: hsl(158, 36%, 37%);
+  transition:ease-out 0.5s;
+}
+
+.button:hover{
+  transition: ease-in 0.5s;
+  background: hsl(157, 39%, 6%);
+}
+
+a{
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 700px){
+
+
+  .card__container{
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-info{
+    background: white;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    width: 300px;
+    margin-top: -10px;
+    height: 360px;
+  }
+
+  .card__image{
+    border-radius: 10px 10px 0px 0px;
+    width: 300px;
+    height: 250px;
+    object-fit:cover;
+    object-position: center;
+  }
+
+  h3{
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  
+  p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+  
+  h1 , h2{
+  font-size: 28px;
+  }
+  
+  h2{
+    font-size: 28px;
+  }
+  
+}
